@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Integrado</title>
+    <meta name="description" content="Site do Grupo Integrado de Campo Mourão - PR">
+    <link rel="shortcut icon" href="images/icone.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" title="home">  
+            <img src="images/logo.png" alt="Integrado" title="Logo integrado">
+        </a>
+        
+    <a href="javascript:mostrar()" title="mostrar menu" class="menu">
+        <i class="fas fa-bars"></i>
+    </a>
+
+    <nav>
+        <ul>
+            <li> 
+                <a href="index.html" title="home">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+            </li>
+                
+            <li>
+                <a href="sobre.html" title="sobre">
+                    <i class="fas fa-search"></i>
+                    Sobre
+                </a>
+            </li>
+
+            <li>
+                <a href="cursos.html" title="cursos" class="centralizarimg">
+                    <i class="fas fa-graduation-cap"></i>
+                    Cursos
+                </a>
+            </li>
+
+            <li>
+                <a href="contatos.html" title="contatos">
+                    <i class="fas fa-envelope"></i>
+                    Contato
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="cinza">Entre em contato</h1>
+           <form name="formCadastro" method="post" action="http://www.professorburnes.com.br/teste-form.php">
+            <label for="nome">Seu nome: </label>
+            <input type="text" name="nome" id="nome" autocomplete="off" required class="input">
+
+            <label for="email">Seu e-mail: </label>
+            <input type="email" name="email" id="email" autocomplete="off" required class="input">
+
+            <label for="mensagem">Mensagem: </label>
+            <textarea name="mensagem" id="mensagem" autocomplete="off" required class="input"></textarea>
+        
+            <button type="submit" required><i class="fa-solid fa-check"></i> Enviar Mensagem</button>
+        </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="box">
+                <div class="grid">
+                    <div class="coluna">
+                       <h3> Localização</h3>
+                            <p>    Av. Irmãos Pereira, 670 - Centro 87301-010  Campo Mourão - PR</p>
+                    </div><!--coluna-->
+                    <div class="coluna">
+                        <h3>Telefone</h3>
+                        <p>0800 042 0109 | (44) 3518 2500</p>
+                    </div><!--coluna-->
+                    <div class="coluna">
+                        <h3>Redes sociais<br>
+                        <p>
+                            <a href="http://facebook.com" title="facebook" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="http://instagram.com" title="instagram" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="http://youtube.com" title="youtube" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                            </a>
+                        </p>
+                    </div><!--coluna-->
+                </div><!--grid-->
+            </div><!--boxes-->
+            <div class="box">
+                <p>Desenvolvido por Emanuel Cirilo dos Santos</p>
+            </div><!--boxes-->
+        </div><!--conteiner-->
+    </footer>
+
+    <script>
+        function mostrar(){
+            document.querySelector("header nav").classList.toggle("mostrar");
+        }
+    </script>
+</body>
+</html>
