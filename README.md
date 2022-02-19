@@ -2,7 +2,7 @@
 
 ## Repositório
 
-Repositórioutilizado nas aulas de controle de versão do bootcamp catalisa para testar os comandos git.
+Repositóriou utilizado nas aulas de controle de versão do bootcamp catalisa para testar os comandos git.
 
 Até o momento foram aprendidos os seguintes comandos
 
